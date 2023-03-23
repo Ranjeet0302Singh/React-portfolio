@@ -1,12 +1,14 @@
 .nav-bar {
+  margin: 3rem;
   background: #181818;
   width: 100px;
-  height: 100%;
+  height: 92%;
   position: absolute;
   top: 0;
   z-index: 3;
   min-height: 500px;
-
+  box-shadow: 20px 10px 15px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
   .logo {
     display: block;
     padding: 8px 0;
@@ -86,10 +88,34 @@
       }
     }
 
-    a.active{
-        svg{
-            color: #ffd700;
-        }
+    a.active {
+      svg {
+        color: #ffd700;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  li {
+    a {
+      padding: 7px 0;
+      display: block;
+      font-size: 20px;
+      line-height: 16px;
+
+      &:hover svg {
+        color: #ffd700;
+      }
     }
   }
 }
