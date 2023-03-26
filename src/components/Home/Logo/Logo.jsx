@@ -1,5 +1,5 @@
 
-import LogoS from '../../../assets/images/R-logo.png'
+import LogoS from '../../../assets/images/Home-img.jpg'
 import './Logo.scss'
 
 const Logo = () => {

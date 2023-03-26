@@ -1,7 +1,7 @@
 import LogoTitle from '../../assets/images/R-title-logo.png'
 import Loader from 'react-loaders'
 import './Home.scss'
-// import Logo from './Logo/Logo'
+import Logo from './Logo/Logo'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
@@ -66,7 +66,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        {/* <Logo/> */}
+        <Logo/>
       </div>
       <Loader type="pacman" className='loader-background'/>
     </>
