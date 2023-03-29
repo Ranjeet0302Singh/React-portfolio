@@ -1,13 +1,34 @@
 .home-page {
-  .text-zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // flex-wrap: wrap;
+
+  .top-tags {
+    bottom: auto;
+    top: 30px;
+  }
+
+  .tags {
+    color: #ffd700;
+    opacity: 0.6;
     position: absolute;
-    left: 20%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 40%;
+    bottom: 0;
+    left: 200px;
+    font-size: 18px;
+    font-family: 'la Belle Aurore';
+  }
+  .top-tag-html {
+    margin-left: -20px;
+  }
+  .bottom-tag-html {
+    margin-left: -20px;
+  }
+  .text-zone {
+    margin-left: 10rem;
+    width: 50%;
     max-width: 90%;
     z-index: 1;
-    // line-height: 50px;
   }
 
   h1 {
@@ -24,7 +45,7 @@
       font-size: 18px;
       position: absolute;
       margin-top: -40px;
-      left: -10px;
+      // left: -10px;
       opacity: 0.6;
     }
 
@@ -78,6 +99,34 @@
     &:hover {
       border: 1px solid #fff;
       color: #fff;
+    }
+  }
+}
+
+.homeImg {
+  margin-top: 2rem;
+  img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .home-page {
+    width: 100%;
+    flex-direction: column;
+  }
+  .homeImg {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  .home-page{
+
+    h1 {
+      font-size: 40px;
+      img{
+        width: 40px;
+      }
     }
   }
 }

@@ -1,7 +1,8 @@
 import LogoTitle from '../../assets/images/R-title-logo.png'
+import homeImg from '../../assets/images/Home-img.jpg'
 import Loader from 'react-loaders'
 import './Home.scss'
-import Logo from './Logo/Logo'
+// import Logo from './Logo/Logo'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
@@ -41,6 +42,11 @@ const Home = () => {
     <>
       <div className="container home-page">
         <div className="text-zone">
+        <span className="tags top-tags">
+          <span className="top-tag-html">&lt;html&gt;</span>
+          <br />
+          <span>&lt;body&gt;</span>
+        </span>
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
@@ -66,7 +72,15 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo/>
+        <div className="homeImg">
+          <img src={homeImg} alt="" />
+        </div>
+
+        <span className="tags bottom-tags">
+          &lt;/body&gt;
+          <br />
+          <span className="bottom-tag-html">&lt;/html&gt;</span>
+        </span>
       </div>
       <Loader type="pacman" className='loader-background'/>
     </>
