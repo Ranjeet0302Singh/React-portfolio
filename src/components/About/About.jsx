@@ -22,12 +22,12 @@ const About = () => {
   return (
     <>
       <div className="container about-page page">
-        <div className="text-zone">
         <span className="tags top-tags">
           <span className="top-tag-html">&lt;html&gt;</span>
           <br />
           <span>&lt;body&gt;</span>
         </span>
+        <div className="text-zone">
           <h1>
             <AnimatedLetters
             letterClass={letterClass}

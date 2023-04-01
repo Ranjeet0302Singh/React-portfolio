@@ -23,7 +23,7 @@ const Textsphere = () => {
         "Canva",
       ];
       const options = {
-        radius: 300,
+        radius: 200,
         maxSpeed: "fast",
         initSpeed: "fast",
       };

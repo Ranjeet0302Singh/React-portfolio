@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   // flex-wrap: wrap;
+  overflow: hidden;
 
   .top-tags {
     bottom: auto;
@@ -59,8 +60,8 @@
       margin-left: 20px;
       opacity: 0.6;
       animation: fadeIn 1s 1.7s backwards;
-      //   left: -30px;
-      //   bottom: 50px;
+        left: -30px;
+        bottom: 50px;
     }
     img {
       width: 50px;
@@ -112,7 +113,7 @@
 
 @media screen and (max-width: 1200px) {
   .home-page {
-    margin: 0 -10rem;
+    margin: 0 -10rem ;
     width: 100%;
     flex-direction: column;
   }
@@ -155,10 +156,10 @@
   .home-page {
     .text-zone {
       h1 {
-        font-size: 30px;
+        font-size: 40px;
       }
       img {
-        width: 30px;
+        width: 40px;
       }
 
     }
