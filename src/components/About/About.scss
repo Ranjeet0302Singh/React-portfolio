@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-overflow: hidden;
+  overflow: hidden;
   .top-tags {
     bottom: auto;
     top: 30px;
@@ -128,8 +128,7 @@ overflow: hidden;
       font-size: 12px;
     }
     .top-tags {
-
-      left:50px;
+      left: 50px;
     }
     .text-zone {
       margin: 0 5rem;
@@ -139,7 +138,7 @@ overflow: hidden;
         &:before {
           font-size: 12px;
         }
-        
+
         &:after {
           font-size: 12px;
         }
@@ -149,20 +148,19 @@ overflow: hidden;
 }
 @media screen and (max-width: 400px) {
   .about-page {
-    .text-zone{
-margin-right: 1rem;
+    .text-zone {
+      margin-right: 1rem;
       h1 {
         font-size: 35px;
-        
       }
-      p{
-font-size: 10px
+      p {
+        font-size: 10px;
       }
     }
 
-    .bottom-tags{
-bottom: -30px;
-        left:50px;
+    .bottom-tags {
+      bottom: -30px;
+      left: 50px;
     }
   }
 }
