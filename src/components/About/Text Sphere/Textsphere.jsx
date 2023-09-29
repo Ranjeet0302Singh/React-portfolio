@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import TagCloud from "TagCloud";
 const Textsphere = () => {
   useEffect(() => {
-    return () => {
+    
       const container = ".tagcloud";
       const texts = [
         "HTML",
@@ -26,9 +26,11 @@ const Textsphere = () => {
         radius: 200,
         maxSpeed: "fast",
         initSpeed: "fast",
+        keep: true,
+
       };
       TagCloud(container, texts, options);
-    };
+    
   }, []);
   return (
     <>
